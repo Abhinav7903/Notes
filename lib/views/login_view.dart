@@ -1,11 +1,8 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:notes/services/auth/auth_exceptions.dart';
 import 'package:notes/services/auth/auth_service.dart';
-import 'package:notes/services/auth/bloc/auth_bloc.dart';
-import 'package:notes/services/auth/bloc/auth_event.dart';
 
 import '../constants/routes.dart';
 import '../utilities/Dialog/error_dialog.dart';
@@ -141,7 +138,7 @@ class _LoginViewState extends State<LoginView> {
                     }
                   },
                   style: ElevatedButton.styleFrom(
-                      primary: Colors.green,
+                      backgroundColor: Colors.green,
                       elevation: 12,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20.0)),
