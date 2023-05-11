@@ -73,9 +73,8 @@ class _LoginViewState extends State<LoginView> {
                 ),
                 focusNode: _focusNode,
               ),
-              const SizedBox(
-                height: 20,
-              ),
+              const SizedBox(height: 20),
+
               TextField(
                 controller: _password,
                 obscureText: passwordVisible,
@@ -112,6 +111,7 @@ class _LoginViewState extends State<LoginView> {
                 keyboardType: TextInputType.visiblePassword,
                 textInputAction: TextInputAction.done,
               ),
+              const SizedBox(height: 20,),
               SizedBox(
                 width: 100,
                 child: ElevatedButton(
@@ -139,13 +139,16 @@ class _LoginViewState extends State<LoginView> {
                   },
                   style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.green,
+
                       elevation: 12,
                       shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20.0)),
-                      padding: const EdgeInsetsDirectional.all(10)),
+                          borderRadius: BorderRadius.circular(25.0)),
+                      padding: const EdgeInsets.symmetric(vertical: 25)),
                   child: const Text("Login"),
                 ),
               ),
+              const SizedBox(height: 20,),
+
               TextButton(
                 onPressed: () {
                   Navigator.of(context)
