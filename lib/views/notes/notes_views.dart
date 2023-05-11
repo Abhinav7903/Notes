@@ -4,11 +4,10 @@ import 'package:notes/services/auth/auth_service.dart';
 import 'package:notes/services/auth/bloc/auth_bloc.dart';
 import 'package:notes/services/auth/bloc/auth_event.dart';
 import 'package:notes/services/cloud/cloud_note.dart';
-import 'package:intl/intl.dart';
 import 'package:notes/services/cloud/firebase_cloud_storage.dart';
 import 'package:notes/utilities/Dialog/delete_dialog.dart';
 import 'package:notes/utilities/Dialog/logout_dialog.dart';
-import 'package:notes/views/notes/notes_list_view.dart';
+
 
 import '../../constants/routes.dart';
 import '../../enum/menu_action.dart';
@@ -87,7 +86,7 @@ class _NotesViewState extends State<NotesView> {
                           borderRadius: BorderRadius.circular(15.0),
                           color: Theme.of(context).brightness == Brightness.light
                               ? Colors.white // Light mode color
-                              : Colors.grey[600],
+                              : Colors.black26,
                           child: Stack(
                             children: [
                               InkWell(
@@ -104,7 +103,7 @@ class _NotesViewState extends State<NotesView> {
                                     children: [
                                       Flexible(
                                         child: Text(
-                                          note.text.length > 10 ? '${note.text.substring(0, 10)}...' : note.text,
+                                          note.text.length > 25 ? '${note.text.substring(0, 25)}...' : note.text,
                                           style:  TextStyle(fontSize: 18.0, color: Theme.of(context).brightness == Brightness.light
                                               ? Colors.black // Light mode color
                                               : Colors.white,) ,
