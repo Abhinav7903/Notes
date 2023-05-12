@@ -39,4 +39,17 @@ Libraries Used
     flutter_bloc for state management.
     firebase_auth for Firebase authentication.
     cloud_firestore for Firebase data storage.
+    
+Login View
+
+    ![Screenshot 2023-05-11 210027](https://github.com/Abhinav7903/Notes/assets/55495151/e198f399-ce62-488f-b06d-a2138b965746)
    
+Register view
+
+  ![Screenshot 2023-05-11 210116](https://github.com/Abhinav7903/Notes/assets/55495151/db0084a0-d785-456d-b4de-cf4f40caf52d)
+
+Notes View
+
+  ![Screenshot 2023-05-11 210249](https://github.com/Abhinav7903/Notes/assets/55495151/18cf4c0b-352a-40ff-911a-8fc5e304c9de)
+
+
