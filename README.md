@@ -31,9 +31,10 @@ Architecture
     Flutter: The app is built using the Flutter framework.
     Bloc Pattern: The app uses the bloc pattern to manage state and business logic.
     Firebase: The app uses Firebase for user authentication and data storage.
-    Libraries Used
+    
+Libraries Used
 
-The app uses the following libraries:
+  The app uses the following libraries:
 
     flutter_bloc for state management.
     firebase_auth for Firebase authentication.
